@@ -30,7 +30,7 @@ func main() {
 	r := gin.Default()
 
 	// 中间件
-	r.Use(middleware.CORSMiddleware())
+	r.Use(middleware.CORSMiddleware(), middleware.AuthMiddleware())
 
 	// 创建处理器
 	nginxHandler := handler.NewNginxHandler()
