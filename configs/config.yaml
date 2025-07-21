@@ -1,0 +1,20 @@
+server:
+  host: "127.0.0.1"
+  port: 8080
+  debug: true
+
+nginx:
+  executable_path: "D:/Program Files/nginx-1.28.0/nginx.exe"
+  config_path: "D:/Program Files/nginx-1.28.0/conf/nginx.conf"
+  log_path: "D:/Program Files/nginx-1.28.0/logs"
+  pid_file: "D:/Program Files/nginx-1.28.0/logs/nginx.pid"
+
+security:
+  enable_auth: true
+  username: "admin"
+  password: "test123456"
+
+backup:
+  enable: true
+  backup_dir: "./backups"
+  max_backups: 10
